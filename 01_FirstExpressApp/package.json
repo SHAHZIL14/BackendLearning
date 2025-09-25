@@ -1,0 +1,17 @@
+{
+  "name": "01_firstexpressapp",
+  "version": "1.0.0",
+  "description": "My first express application.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Mohd Shahzil Raza",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0"
+  }
+}
