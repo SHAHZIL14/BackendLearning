@@ -1,7 +1,17 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-const requiredVars = ["PORT", "DB_URI"];
+const requiredVars = [
+  "PORT",
+  "DB_URI",
+  "ACCESS_TOKEN_SECRET",
+  "ACCESS_TOKEN_EXPIRY",
+  "REFRESH_TOKEN_SECRET",
+  "REFRESH_TOKEN_EXPIRY",
+  "CLOUDINARY_NAME",
+  "CLOUDINARY_API",
+  "CLOUDINARY_SECRET",
+];
 requiredVars.forEach((key) => {
   if (!process.env[key]) {
     throw new Error(`❌ Environment variable "${key}" has not been loaded!`);
