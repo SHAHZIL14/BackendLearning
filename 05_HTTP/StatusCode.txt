@@ -1,0 +1,96 @@
+🔹 HTTP vs HTTPS
+
+HTTP sends data in plain text — anyone can read it if intercepted.
+
+HTTPS uses encryption so the data stays unreadable during transfer.
+
+Functionally they are similar, but HTTPS adds a security layer.
+
+
+
+🔹 Key Terms
+
+URL (Uniform Resource Locator) → The address of a resource.
+
+URI / URN → More technical identifiers; often used interchangeably.
+
+
+
+🔹 Headers
+
+HTTP requests and responses include headers, which are metadata (key-value pairs) describing the data being sent.
+
+Types of headers:
+
+Request headers: Info sent by the client (e.g., user agent, authorization).
+
+Response headers: Info returned by the server (e.g., status code, content type).
+
+Representation headers: Tell what encoding/compression is used.
+
+Payload headers: Contain the actual data (called “payload”).
+
+Headers are used for caching, authentication, cookies, state management, etc.
+
+
+
+🔹 Common Headers Examples
+
+Accept → tells what type of data client accepts (e.g., JSON).
+
+User-Agent → identifies the client (browser/app).
+
+Authorization → sends bearer/JWT tokens.
+
+Content-Type → tells what data format is being sent.
+
+Cookie → stores user/session info.
+
+Cache-Control → manages cache expiry.
+
+
+
+🔹 HTTP Methods
+
+Common methods and their uses:
+
+GET → Retrieve data.
+
+POST → Create a new resource.
+
+PUT → Replace a resource completely.
+
+PATCH → Update a part of a resource.
+
+DELETE → Remove a resource.
+
+HEAD → Same as GET but only returns headers.
+
+OPTIONS → Shows allowed methods for an endpoint.
+
+TRACE → Used for debugging (returns the same request).
+
+
+
+🔹 Status Codes
+
+1xx -> Informational
+2xx -> Success
+3xx -> Redirection
+4xx -> Client Side Error
+5xx -> Server Side Error
+
+Some Standards :
+100 -> Continue
+102 -> Processing
+200 -> OK
+201 -> Created
+202 -> Accepted
+307 -> Temporary Redirection
+308 -> Permanent Redirection
+400 -> Bad Request
+401 -> Unauthorized
+402 -> Payment Required
+404 -> Not Found 
+500 -> Server Internal Error
+504 -> Gateway Timeout
