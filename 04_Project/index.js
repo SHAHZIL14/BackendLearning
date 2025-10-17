@@ -27,6 +27,12 @@ APP.use(express.static("/public"));
 APP.use(cookieParser());
 //Middleware
 
+
+import router from "./src/routes/user.routes.js";
+
+APP.use("/api/v1/users",router);
+//Routes
+
 APP.get("/", (req, res) => {
   res.send("Versia server");
 });
